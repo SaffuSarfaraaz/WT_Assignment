@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMIT Tessaract Survey Form</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #68b684; 
+        }
+        .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 15px 0px 10px rgba(0, 0, 0, 0.3);
+        max-width: 80%;
+        margin: auto;
+}
+
+        h1 {
+            text-align: center;
+            color: #000000; 
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-decoration: underline;">Keshav Tesseract Survey Form</h1>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" size="60" id="name" placeholder="Enter your name" name="name" required style="margin-top: 10px;"><br><br>
+            
+            <label for="email">Email</label><br>
+            <input type="email" size="60" id="email" placeholder="Enter your email" name="email" required style="margin-top: 10px;"><br><br>
+            
+            <label for="age">Age</label><br>
+            <input type="text" size="60" id="age" placeholder="Enter your age" name="age" min="1" max="120" required style="margin-top: 10px;"><br><br>
+            
+            <label for="role" >Which option best describes you?</label><br>
+            <select id="role" name="role" style="width: 400px; margin-top: 10px;">
+                <option value="student">Student</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Visitort">Visitor</option>
+            </select><br><br>
+
+            <label for="recommend">Would you recommend Keshav Tessaract to a friend?</label><br>
+            <input type="radio" id="recommendYes" name="recommend" value="yes" required style="margin-top: 10px;">
+            <label for="recommendYes">Yes</label><br>
+            <input type="radio" id="recommendNo" name="recommend" value="no" required style="margin-top: 10px;">
+            <label for="recommendNo">No</label><br>
+            <input type="radio" id="recommendMaybe" name="recommend" value="maybe" required style="margin-top: 10px;">
+            <label for="recommendMaybe">Maybe</label><br><br>
+           
+            <label for="languages">Languages and Frameworks known (Check all that apply)</label><br>
+            <input type="checkbox" id="C" name="languages" value="C" style="margin-top: 10px;">
+            <label for="OC">OC</label><br>
+            <input type="checkbox" id="Cplusplus" name="languages" value="Cplusplus" style="margin-top: 10px;">
+            <label for="Cplusplus">C++</label><br>
+            <input type="checkbox" id="Python" name="languages" value="Python" style="margin-top: 10px;">
+            <label for="Python">Python</label><br>
+            <input type="checkbox" id="Java" name="languages" value="Java" style="margin-top: 10px;">
+            <label for="Java">Java</label><br>
+            <input type="checkbox" id="JavaScript" name="languages" value="JavaScript" style="margin-top: 10px;">
+            <label for="JavaScript">JavaScript</label><br>
+            <input type="checkbox" id="React" name="languages" value="React" style="margin-top: 10px;">
+            <label for="React">React</label><br>
+            <input type="checkbox" id="Angular" name="languages" value="Angular" style="margin-top: 10px;">
+            <label for="Angular">Angular</label><br>
+            <input type="checkbox" id="Vue" name="languages" value="Vue" style="margin-top: 10px;">
+            <label for="Vue">Vue</label><br><br>
+            
+            <label for="comments">Comments and Feedback</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" style="margin-top: 10px;"></textarea><br><br><br>
+            
+            <input type="submit" value="Submit" style="width: 400px; height: 30px; font-weight: bold; background-color:limegreen;" >
+        </form>
+    </div>
+</body>
+</html>
